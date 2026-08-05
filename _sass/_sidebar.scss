@@ -13,10 +13,12 @@
   @include clearfix();
   margin-bottom: 1em;
   padding-top: 2em;
+  font-size: 0.85em; // scale the whole sidebar down 15%
 
   @include breakpoint($large) {
     @include span(3 of 12);
     padding-top: 3em;
+    padding-left: 3em; // nudge sidebar content toward the main column
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -89,7 +91,7 @@
     border-radius: 0;
 
     @include breakpoint($large) {
-      max-width: 263px;
+      max-width: 156px; // ~146px + 7%
       padding: 5px;
       border: 1px solid $border-color;
     }
@@ -120,9 +122,17 @@
   }
 }
 .sidebar .author__name {
-  font-family: 'Playfair Display', 'STKaiti', '华文楷体', 'Kaiti SC', Georgia, serif;
-  font-size: $type-size-3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $type-size-4;
   font-weight: 700;
+}
+
+.sidebar .author__name-cn {
+  margin: 0;
+  font-family: Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 0.875em; // $type-size-6 (~12px) + 2px
+  font-weight: 400;
+  color: $text-color;
 }
 
 .author__bio {
@@ -148,11 +158,11 @@
 
   a {
     color: #555;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
 
     @include breakpoint($large) {
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
 
     &:hover {
@@ -178,39 +188,43 @@
       margin-bottom: 0.5em;
     }
 
+    // USC cardinal accent for the section menu
+    $nav-accent: #990000;
+
     a {
       display: flex;
       align-items: center;
       color: $text-color;
       text-decoration: none;
-      font-size: 1em;
-      padding: 0.3em 0;
+      font-size: 0.9em;
+      padding: 0.25em 0;
       transition: color 0.2s ease;
 
       &:hover {
-        color: $link-color;
+        color: $nav-accent;
 
         .nav-indicator {
-          background-color: $link-color;
-          width: 24px;
+          background-color: $nav-accent;
+          transform: scale(1.4);
         }
       }
 
       &.active {
-        color: $link-color;
+        color: $nav-accent;
         font-weight: 600;
 
         .nav-indicator {
-          background-color: $link-color;
-          width: 24px;
+          background-color: $nav-accent;
+          transform: scale(1.4);
         }
       }
     }
 
     .nav-indicator {
       display: inline-block;
-      width: 16px;
-      height: 2px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
       background-color: #ccc;
       margin-right: 12px;
       transition: all 0.2s ease;

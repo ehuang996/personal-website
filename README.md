@@ -1,11 +1,9 @@
 # junruihuang.com
 
-Personal academic website of Junrui Huang, hosted on GitHub Pages at
+Personal academic website of Jun Rui Huang, hosted on GitHub Pages at
 [junruihuang.com](https://junruihuang.com).
 
-Built on the [AcademicPages](https://github.com/academicpages/academicpages.github.io)
-Jekyll template (MIT), with single-page layout and styling adapted from
-[YWolfeee/YWolfeee.github.io](https://github.com/YWolfeee/YWolfeee.github.io) (MIT).
+A single-page Jekyll site; upstream licensing is covered by the LICENSE file.
 
 ## Editing
 

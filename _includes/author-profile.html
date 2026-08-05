@@ -12,6 +12,7 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
+    <p class="author__name-cn">黄俊瑞 (Huáng Jùn Ruì)</p>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
     <div class="author__social">
       {% if author.email %}
@@ -63,12 +64,14 @@
         </a>
       </li>
       -->
+      <!-- Uncomment when you add a Services section to _pages/about.md
       <li>
         <a href="#services" data-section="services">
           <span class="nav-indicator"></span>
           Services
         </a>
       </li>
+      -->
       <li>
         <a href="#awards" data-section="awards">
           <span class="nav-indicator"></span>
@@ -86,7 +89,7 @@
 
   <script>
     (function() {
-      var sections = ['about', 'news', 'publications', 'services', 'awards', 'misc']; // add 'talks' back when you enable the Talks section
+      var sections = ['about', 'news', 'publications', 'awards', 'misc']; // add 'talks'/'services' back when you enable those sections
       var navLinks = document.querySelectorAll('.author__nav a[data-section]');
 
       function highlightNav() {
