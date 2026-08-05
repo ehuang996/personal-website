@@ -8,16 +8,23 @@ redirect_from:
 ---
 
 <p id="about">
-Hi! I am Junrui Huang, an undergraduate researcher at the <a href="https://www.usc.edu/">University of Southern California</a>, where I study Computer Engineering &amp; Computer Science and Applied Mathematics.
+I am a fourth-year undergrad at the <a href="https://cs.usc.edu/">University of Southern California</a>, where I am fortunate to be advised by Prof. Robin Jia. Currently, I am working closely with Wang Zhu and Dhananjay Ashok.
 </p>
 
-My research interests lie in machine learning, natural language processing, and artificial intelligence.
-<!-- TODO: expand with a sentence or two about what you are currently working on and who you work with. -->
+My research aims to study how AI systems behave when they interact with people and the world, and to make these systems as transparent as possible. Specifically, for both language models and interactive agents:
+- How do we evaluate whether conversational AI acts in the user's long-term
+interest — rather than fostering harmful intimacy, dependence, or prolonged
+engagement? ([EUDAIMONIA](https://arxiv.org/abs/2605.30654))
+- How do we test whether agents genuinely learn transferable skills, instead
+of memorizing solutions seen during training?
+([GameBoyWorlds](https://dhananjayashok.github.io/GameBoyRL/))
+
 Feel free to reach out if you are interested in my work or simply want to chat.
 
 <h2 id="news">News</h2>
 <!-- Newest first. Each item starts with "(Mon. Year)". -->
-- (Aug. 2025) This website is live! <!-- TODO: replace with real news items -->
+- (Aug. 2026) This website is live!
+- (May 2026) We released [EUDAIMONIA](https://arxiv.org/abs/2605.30654), a benchmark testing whether conversational AI prioritizes user wellbeing over harmful intimacy, dependence, and prolonged engagement — even top models violate ~30% of our design-requirement checks.
   <br/>
 
 <h2 id="publications">Selected Publications</h2>
@@ -28,15 +35,18 @@ Feel free to reach out if you are interested in my work or simply want to chat.
      highlights like "NeurIPS 2025 Oral". Keep your name inside <b></b>.
      Delete any [links] you don't have. -->
 
+<!-- TODO: replace the placeholder thumbnail with a real figure from the paper
+     (save it as images/papers/eudaimonia.png and update both href and src).
+     Also verify the co-first-author asterisks below match the paper. -->
 <div class="pub-item">
 <div class="pub-left">
 <abbr class="badge">Preprint</abbr>
-<a href="/images/papers/example-paper.png" target="_blank"><img src="/images/papers/example-paper.png" alt="Example paper"></a>
+<a href="/images/papers/example-paper.png" target="_blank"><img src="/images/papers/example-paper.png" alt="EUDAIMONIA"></a>
 </div>
 <div class="pub-right">
-<div class="pub-title">An Example Paper Title: Replace Me With a Real Publication</div>
-<div class="pub-authors">First Author, <b>Junrui Huang</b>, Third Author</div>
-<div class="pub-links"><a href="https://arxiv.org">[Paper]</a> <a href="https://github.com/ehuang996">[Code]</a> <a href="https://example.com">[Website]</a></div>
+<div class="pub-title">EUDAIMONIA: Evaluating Undesirable Dynamics in AI</div>
+<div class="pub-authors"><b>Jun Rui Huang</b>*, Wang Bill Zhu*, Ziyi Liu, Nathanael Fast, Ravi Iyer, Robin Jia</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2605.30654">[Paper]</a></div>
 </div>
 </div>
 
