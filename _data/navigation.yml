@@ -1,33 +1,27 @@
 # The following is the order of the links in the header of the website.
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# The site is a single page, so every link is an anchor into a section of
+# the homepage. Add or remove sections here to change the top menu.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "About Me"
+    url: /#about-me
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "News"
+    url: /#news
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+  - title: "Selected Publications"
+    url: /#selected-publications
+
+  # Uncomment when you have talks to list (also uncomment the section in _pages/about.md)
+  # - title: "Talks"
+  #   url: /#talks
+
+  - title: "Services"
+    url: /#services
+
+  - title: "Awards"
+    url: /#awards
+
+  - title: "Miscellaneous"
+    url: /#miscellaneous
