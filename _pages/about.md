@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <p id="about">
-I am a fourth-year undergrad at the <a href="https://cs.usc.edu/">University of Southern California</a>, where I am fortunate to be advised by Prof. Robin Jia. Currently, I am working closely with Wang Zhu and Dhananjay Ashok.
+I am a fourth-year undergrad at the <a href="https://cs.usc.edu/">University of Southern California</a>, where I am fortunate to be advised by Prof. <a href="https://robinjia.github.io/">Robin Jia</a>. Currently, I am working closely with <a href="https://billzhu.me/">Wang Zhu</a> and <a href="https://dhananjayashok.github.io/">Dhananjay Ashok</a>.
 </p>
 
 My research aims to study how AI systems behave when they interact with people and the world, and to make these systems as transparent as possible. Specifically, for both language models and interactive agents:
