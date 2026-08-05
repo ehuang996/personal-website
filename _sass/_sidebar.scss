@@ -1,0 +1,219 @@
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+
+/*
+   Default
+   ========================================================================== */
+
+.sidebar {
+  -webkit-transform: translate3d(0, 0 , 0);
+          transform: translate3d(0, 0 , 0);
+
+  @include clearfix();
+  margin-bottom: 1em;
+  padding-top: 2em;
+
+  @include breakpoint($large) {
+    @include span(3 of 12);
+    padding-top: 3em;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  @include breakpoint($x-large) {
+    padding-right: 0;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    font-family: $sans-serif-narrow;
+  }
+
+  h3, h4 {
+    font-size: $type-size-5;
+  }
+
+  p, li {
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    line-height: 1.5;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.sidebar__right {
+  margin-bottom: 1em;
+
+  @include breakpoint($large) {
+    position: relative;
+    float: right;
+    width: $right-sidebar-width-narrow;
+    margin-left: span(0.5 of 12);
+    z-index: 10;
+  }
+
+  @include breakpoint($x-large) {
+    width: $right-sidebar-width;
+  }
+}
+
+/*
+   Author profile and links
+   ========================================================================== */
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 108px;
+  // set width only, for non-square avatars
+  // height: 108px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    max-width: 108px;
+    border-radius: 0;
+
+    @include breakpoint($large) {
+      max-width: 263px;
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.author__content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 25px;
+  line-height: 1;
+
+  @include breakpoint($large) {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.author__name {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+.sidebar .author__name {
+  font-family: 'Playfair Display', 'STKaiti', '华文楷体', 'Kaiti SC', Georgia, serif;
+  font-size: $type-size-3;
+  font-weight: 700;
+}
+
+.author__bio {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.author__social {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+
+  @include breakpoint($large) {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  a {
+    color: #555;
+    font-size: 1.5em;
+    text-decoration: none;
+
+    @include breakpoint($large) {
+      font-size: 1.8em;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.author__nav {
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+    margin-top: 30px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $text-color;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 0.3em 0;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $link-color;
+
+        .nav-indicator {
+          background-color: $link-color;
+          width: 24px;
+        }
+      }
+
+      &.active {
+        color: $link-color;
+        font-weight: 600;
+
+        .nav-indicator {
+          background-color: $link-color;
+          width: 24px;
+        }
+      }
+    }
+
+    .nav-indicator {
+      display: inline-block;
+      width: 16px;
+      height: 2px;
+      background-color: #ccc;
+      margin-right: 12px;
+      transition: all 0.2s ease;
+    }
+  }
+}
